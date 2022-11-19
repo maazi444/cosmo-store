@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "HK Grotesk", sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    padding: 2em 4em;
+    position: fixed;
+    transition: 0.3s;
+    /* border: 1px solid white; */
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.inverted {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.header__desktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.header__logo:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.header__links {
+    display: flex;
+    gap: 3em;
+}
+
+.header__links a {
+    display: block;
+    font-weight: 600;
+    color: #222;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+}
+
+.header__actions {
+    display: flex;
+    gap: 2em;
+}
+
+.header__actions a {
+    display: inline-block;
+}
+
+.header__actions a:hover {
+    transform: translateY(-2px);
+    transition: 0.2s ease-in;
+}
+
+.header__cartBtn {
+    background: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+}
+
+.header__cartBtn img {
+    display: inline-block;
+    width: 1.5em;
+}
+
+.header__mobileBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    display: none;
+}
+
+.header__mobileBtn:active img {
+    transform: scale(0.8);
+    transition: 0.2s ease-in-out;
+}
+
+.header__mobileNav {
+    display: none;
+    visibility: hidden;
+}
+
+.mobile_nav_active {
+    display: block;
+    visibility: visible;
+}
+
+.header__mobileNav ul {
+    list-style: none;
+}
+
+.header__mobileNav a {
+    font-weight: 600;
+    color: #222;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero_image.webp") no-repeat center;
+    background-size: cover;
+    padding-top: 5em;
+}
+
+.hero__text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5em;
+}
+
+.hero__text h1 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #000;
+}
+
+.hero__text p {
+    font-size: 1.4em;
+    color: #424242;
+}
+
+.hero__buttons {
+    margin-top: 3em;
+    display: flex;
+    gap: 2em;
+}
+
+.hero__buttons a {
+    display: block;
+    padding: 1em 2.8em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.hero__blackBtn {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.hero__blackBtn:hover {
+    background: #191512;
+}
+
+.hero__transBtn {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 600;
+}
+
+.hero__transBtn:hover {
+    background: #000;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    font-size: 1.7em;
+    padding: 1em 0;
+    color: #000;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 26s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .header__links,
+    .header__profile,
+    .header__wishlist {
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__mobileBtn {
+        display: block;
+        visibility: visible;
+    }
+
+    .header__mobileNav {
+        font-size: 1.3em;
+        padding-top: 2em;
+    }
+
+    .header__mobileNav ul li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
