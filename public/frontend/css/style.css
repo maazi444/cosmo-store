@@ -200,6 +200,23 @@ textarea {
     clear: both;
 }
 
+.large-heading {
+    font-size: 3em;
+    font-weight: 500;
+    color: #000;
+}
+
+.medium-heading {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000;
+}
+
+.large-paragraph {
+    font-size: 1.4em;
+    color: #424242;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
