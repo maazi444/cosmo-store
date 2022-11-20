@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-size: calc(8px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
     line-height: calc(21px + 0.6vw);
 }
 
@@ -215,6 +215,37 @@ textarea {
 .large-paragraph {
     font-size: 1.4em;
     color: #424242;
+}
+
+@media (max-width: 768px) {
+    .large-heading {
+        font-size: 3em;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .medium-heading {
+        font-size: 2em;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .large-paragraph {
+        font-size: 1.8em;
+        color: #424242;
+    }
+
+    h4 {
+        font-size: calc(16px + 0.5vw);
+    }
+
+    p {
+        font-size: calc(12px + 0.5vw);
+    }
+
+    a {
+        font-size: calc(10px + 0.5vw);
+    }
 }
 
 /* ==========================================================================

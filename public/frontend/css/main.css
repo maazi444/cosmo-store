@@ -211,6 +211,7 @@ header:hover {
 .homeCategory {
     width: 100%;
     display: flex;
+    flex-direction: row;
     padding: 2em 6em;
 }
 
@@ -488,9 +489,27 @@ header:hover {
 
 /* Footer End */
 
+@media (max-width: 1024px) {
+    /* Responsive Hero Section Start */
+
+    .hero__text {
+        margin-top: 10em;
+        width: 70%;
+    }
+
+    .hero__buttons a {
+        margin: 0 3px;
+    }
+
+    /* Responsive Hero Section End */
+}
+
 @media (max-width: 768px) {
+    /* Responsive Header Start */
+
     header {
         background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
     }
     .header__links,
     .header__profile,
@@ -513,4 +532,97 @@ header:hover {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
+
+    /* Responsive Header End */
+
+    /* Responsive Hero Section Start */
+
+    .hero__text {
+        margin-top: 10em;
+        width: 100%;
+    }
+
+    .hero__buttons a {
+        margin: 0 3px;
+    }
+
+    /* Responsive Hero Section End */
+
+    /* Responsive Home Category Start */
+
+    .homeCategory {
+        flex-direction: column-reverse;
+    }
+
+    .homeCategory__images {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .homeCategory__col1,
+    .homeCategory__col2 {
+        width: 100%;
+    }
+
+    .homeCategory__item {
+        padding: 1em;
+    }
+
+    .homeCategory__itemInner {
+        height: 340px;
+    }
+
+    .homeCategory__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .homeCategory__innerDetails .medium-heading {
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #000;
+    }
+
+    /* Responsive Home Category End */
+
+    /* Responsive Bestseller Products Start */
+
+    .bestseller {
+        flex-direction: column;
+    }
+
+    .bestseller__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bestseller__slider {
+        margin-top: 3em;
+    }
+
+    .bestseller__slider {
+        width: 100%;
+    }
+
+    /* Responsive Bestseller Products End */
+
+    /* Responsive Home CTA Start */
+
+    .homecta__content {
+        width: 100%;
+    }
+
+    .homecta__content div {
+        left: 1.5em;
+    }
+
+    /* Responsive Home CTA End */
+
+    /* Responsive Founder Msg Start */
+
+    .foundermsg div {
+        width: 100%;
+    }
+
+    /* Responsive Founder Msg End */
 }

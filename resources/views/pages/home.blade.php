@@ -211,7 +211,7 @@
                 </svg>
             </span>
             <h4>Shipped free & with love</h4>
-            <p>On orders abouve $50.</p>
+            <p>On orders above $50.</p>
         </div>
         <!-- Site Feature Col End -->
         <!-- Site Feature Col Start -->
