@@ -1,6 +1,6 @@
 <header>
     <div class="header__desktopNav">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="{{ url('/') }}">
             <img src="{{ asset('frontend/img/logo.svg') }}" alt="Levre" />
         </a>
         <div class="header__links">
@@ -12,7 +12,7 @@
         </div>
         <div class="header__actions">
             <a class="header__wishlist" href="#"><img src="{{ asset('frontend/img/heart-icon.svg') }}" alt="Levre Wishlist" /></a>
-            <a class="header__profile" href="#"><img src="{{ asset('frontend/img/profile.svg') }}" alt="Levre User" /></a>
+            <a class="header__profile" href="{{ route('login') }}"><img src="{{ asset('frontend/img/profile.svg') }}" alt="Levre User" /></a>
             <button class="header__cartBtn">
                 <img src="{{ asset('frontend/img/cart-icon.svg') }}" alt="Levre Navigation" />
                 <span class="cart-item-counter">0</span>
@@ -31,7 +31,7 @@
             <li><a href="">Contact</a></li>
             <li>
                 <a class="header__wishlist-mobile" href="#"><img src="{{ asset('frontend/img/heart-icon.svg') }}" alt="Levre Wishlist" /></a>
-                <a class="header__profile-mobile" href="#"><img src="{{ asset('frontend/img/profile.svg') }}" alt="Levre User" /></a>
+                <a class="header__profile-mobile" href="{{ route('login') }}"><img src="{{ asset('frontend/img/profile.svg') }}" alt="Levre User" /></a>
             </li>
         </ul>
     </div>
