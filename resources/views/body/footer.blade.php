@@ -8,11 +8,11 @@
 
         <div class="row">
             <ul>
-                <li><a href="#">Contact us</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
 

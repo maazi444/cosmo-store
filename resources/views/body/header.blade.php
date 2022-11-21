@@ -4,7 +4,7 @@
             <img src="{{ asset('frontend/img/logo.svg') }}" alt="Levre" />
         </a>
         <div class="header__links">
-            <a href="">Home</a>
+            <a href="{{ route('home') }}">Home</a>
             <a href="">Shop</a>
             <a href="">Categories</a>
             <a href="">About</a>
@@ -24,7 +24,7 @@
     </div>
     <div class="header__mobileNav">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="">Shop</a></li>
             <li><a href="">Categories</a></li>
             <li><a href="">About</a></li>
