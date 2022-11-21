@@ -302,7 +302,7 @@ header:hover {
 }
 
 .bestseller__content {
-    width: 30%;
+    width: 25%;
 }
 
 .bestseller__content a {
@@ -313,7 +313,7 @@ header:hover {
 }
 
 .bestseller__slider {
-    width: 70%;
+    width: 75%;
 }
 
 .splide img {
@@ -580,6 +580,30 @@ header:hover {
 
 /* Footer End */
 
+/* Custom Scroll bar Start */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Custom Scroll bar End */
+
 /* ------ Responsive Media Queries ------ */
 
 @media (max-width: 1024px) {
@@ -718,4 +742,101 @@ header:hover {
     }
 
     /* Responsive Founder Msg End */
+}
+
+/* ------- Admin Dashboard ------- */
+
+.dash {
+    display: flex;
+}
+
+.dash * {
+    font-family: "Roboto", sans-serif;
+}
+
+.dash__sidebar {
+    width: 15rem;
+    height: 100vh;
+    background: #f8f8f8;
+    border-right: 1px solid #dbdbdb;
+    overflow-y: auto;
+}
+
+.sidebar__header {
+    display: block;
+    height: 3.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background: #e8e6e6;
+}
+
+.sidebar__adminLabel span {
+    background: #454545;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #f1f1f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.sidebar__body {
+    height: calc(100%-3.25rem);
+    padding: 1em;
+}
+
+.sidebar__nav {
+    list-style: none;
+}
+
+.sidebar__nav-section-title span {
+    color: #a9a9a9;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sidebar__nav-menu {
+    list-style: none;
+}
+
+.sidebar__nav-menu-item {
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__nav-menu svg {
+    width: 20px;
+    margin-right: 0.3em;
+}
+
+.sidebar__nav-menu-item:hover {
+    background-color: #e9e7e7;
+    transition: 0.2s;
+}
+
+.sidebar__nav-menu-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 0.2em 0.5em;
+}
+
+.dash__dcontent {
+    width: calc(100% - 15rem);
+}
+
+.dcontent__header {
+    display: block;
+    height: 3.25em;
+    padding: 0 1em;
+    border-bottom: 1px solid #dbdbdb;
+    background: #f8f8f8;
 }
