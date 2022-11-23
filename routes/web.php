@@ -18,6 +18,6 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard_master');
+        return view('pages.admincp.dashboard');
     })->name('dashboard');
 });
