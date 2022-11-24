@@ -8,6 +8,16 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::prefix('/admin')->group(
+    function () {
+        Route::get('/categories', function () {
+            return view('pages.admincp.categories.categories');
+        })->name('admin.categories');
+        Route::get('/categories/add', [AdminController::class, 'CreateCategory'])->name('admin.create.category');
+        Route::post('/categories/store', [AdminController::class, 'StoreCategory'])->name('admin.store.category');
+    }
+);
+
 
 Route::get('/logout', [AdminController::class, 'Logout'])->name('admin.logout');
 
